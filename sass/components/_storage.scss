@@ -1,0 +1,75 @@
+.storage {
+    align-items: center;
+    background-color: $dark-blue;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    justify-content: flex-start;
+    padding: 2rem;
+    position: relative;
+    width: 100%;
+
+    @include respond(desktop) {
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 3rem;
+        width: 50rem;
+    }
+
+    &__limits {
+        display: flex;
+        font-weight: 700;
+        justify-content: space-between;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    &__remaining-box {
+        background: white;
+        border-radius: 0.5rem;
+        color: black;
+        padding: 2rem;
+        position: absolute;
+        top: 10rem;
+
+        @include respond(desktop) {
+            top: -3rem;
+            right: 2rem;
+
+            &:before {
+                content: "";
+                clip-path: polygon(0 0, 100% 100%, 100% 0);
+                background-color: white;
+                display: inline-block;
+                position: absolute;
+                height: 25px;
+                width: 25px;
+                top: 68px;
+                right: 0;
+                z-index: 200;
+            }
+        }
+
+        &__sentence {
+            font-size: 1rem;
+            text-align: center;
+            color: hsl(229, 7%, 55%);
+            line-height: 0.5rem;
+
+            &__remaining {
+                color: black;
+                font-weight: 700;
+                font-size: 3rem;
+            }
+        }
+    }
+
+    &__sentence {
+        padding-bottom: 1rem;
+    }
+
+    &__used-storage {
+        font-weight: 700;
+    }
+}

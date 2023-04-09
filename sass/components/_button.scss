@@ -1,0 +1,13 @@
+.btn {
+    background-color: $very-dark-blue;
+    border-radius: 0.77rem;
+    border-style: none;
+    cursor: pointer;
+    padding: 1rem;
+    transition: 0.2s;
+    width: 4rem;
+
+    &:hover {
+        background-color: $gradient-flesh;
+    }
+}

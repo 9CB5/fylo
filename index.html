@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- Meta data -->
+    <!-------------------------------------------------------------------------------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Fylo</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon-32x32.png">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <!-------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+
+    <!-- Animate.css -->
+    <!---------------------------------------------------------------------------------------->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+
+<body>
+    <main class="main-layout">
+        <!-- Actions card -->
+        <!-------------------------------------------------------------------------------------------->
+        <aside class="animate__animated animate__bounceInLeft actions">
+            <img class="actions__logo" src="./images/logo.svg" alt="logo">
+
+            <div class="actions__buttons">
+                <button class="btn"><img src="./images/icon-document.svg" alt="document"></button>
+                <button class="btn"><img src="./images/icon-folder.svg" alt="folder"></button>
+                <button class="btn"><img src="./images/icon-upload.svg" alt="upload"></button>
+            </div>
+        </aside>
+
+        <!-- Storage card -->
+        <!-------------------------------------------------------------------------------------------->
+        <aside class="animate__animated animate__bounceInRight storage">
+            <p class="storage__sentence">
+                You've used <span class="storage__used-storage">500 GB</span>
+            of your storage</p>
+
+            <input
+                autocomplete="off"
+                class="slider"
+                id="slider"
+                max="1000"
+                min="0"
+                type="range"
+                value="500"
+            />
+
+            <div class="storage__limits">
+                <p>0 GB</p>
+                <P>1000 GB</P>
+            </div>
+
+            <div class="storage__remaining-box">
+                <p class="storage__remaining-box__sentence">
+                    <span class="storage__remaining-box__sentence__remaining">500</span> GB LEFT
+                </p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Script import -->
+    <!-------------------------------------------------------------------------------------------->
+    <script src="./script.js"></script>
+</body>
