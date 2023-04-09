@@ -23,8 +23,9 @@ body {
 
     @include respond(desktop) {
         background: url(../images/bg-desktop.png) $very-dark-blue;
-        background-size: auto !important;
+        background-size: contain !important;
         background-repeat: no-repeat;
-        background-position: 50% 72%;
+        background-position: 50% 100%;
+        background-attachment: fixed;
     }
 }
