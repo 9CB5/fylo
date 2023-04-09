@@ -13,7 +13,7 @@ html {
 
 body {
     background-size: cover !important;
-    background: url(../../images/bg-mobile.png) no-repeat;
+    background: url(../images/bg-mobile.png) no-repeat;
     box-sizing: border-box;
     color: $pale-blue;
     display: flex;
@@ -22,7 +22,7 @@ body {
     overflow: hidden;
 
     @include respond(desktop) {
-        background: url(../../images/bg-desktop.png) $very-dark-blue;
+        background: url(../images/bg-desktop.png) $very-dark-blue;
         background-size: auto !important;
         background-repeat: no-repeat;
         background-position: 50% 72%;

@@ -163,7 +163,7 @@ html {
 
 body {
   background-size: cover !important;
-  background: url(../../images/bg-mobile.png) no-repeat;
+  background: url(../images/bg-mobile.png) no-repeat;
   box-sizing: border-box;
   color: #dddbff;
   display: flex;
@@ -172,7 +172,7 @@ body {
   overflow: hidden; }
   @media only screen and (min-width: 768px) {
     body {
-      background: url(../../images/bg-desktop.png) #0c122c;
+      background: url(../images/bg-desktop.png) #0c122c;
       background-size: auto !important;
       background-repeat: no-repeat;
       background-position: 50% 72%; } }
